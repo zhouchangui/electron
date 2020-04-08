@@ -7,7 +7,7 @@ import * as path from 'path';
 import { ifdescribe, ifit } from './spec-helpers';
 import * as temp from 'temp';
 import * as url from 'url';
-import { ipcMain, app, BrowserWindow, BrowserWindowConstructorOptions } from 'electron/main';
+import { ipcMain, app, BrowserWindow, BrowserWindowOptions } from 'electron/main';
 import { crashReporter } from 'electron/common';
 import { AddressInfo } from 'net';
 import { closeWindow, closeAllWindows } from './window-helpers';
@@ -59,7 +59,7 @@ ifdescribe(!process.mas && !process.env.DISABLE_CRASH_REPORTER_TESTS && process.
     checkCrash('node', crash);
   });
 
-  const generateSpecs = (description: string, browserWindowOpts: BrowserWindowConstructorOptions) => {
+  const generateSpecs = (description: string, browserWindowOpts: BrowserWindowOptions) => {
     describe(description, () => {
       let w: BrowserWindow;
 

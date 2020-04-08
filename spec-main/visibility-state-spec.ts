@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 import * as cp from 'child_process';
-import { BrowserWindow, BrowserWindowConstructorOptions, ipcMain } from 'electron/main';
+import { BrowserWindow, BrowserWindowOptions, ipcMain } from 'electron/main';
 import * as path from 'path';
 
 import { emittedOnce } from './events-helpers';
@@ -18,7 +18,7 @@ ifdescribe(process.platform !== 'linux')('document.visibilityState', () => {
 
   const load = () => w.loadFile(path.resolve(__dirname, 'fixtures', 'chromium', 'visibilitystate.html'));
 
-  const itWithOptions = (name: string, options: BrowserWindowConstructorOptions, fn: Mocha.Func) => {
+  const itWithOptions = (name: string, options: BrowserWindowOptions, fn: Mocha.Func) => {
     return it(name, async function (...args) {
       // document.visibilityState tests are very flaky, this is probably because
       // Electron implements it via async IPC messages.

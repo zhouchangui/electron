@@ -73,6 +73,7 @@ auto_filenames = {
     "docs/api/webview-tag.md",
     "docs/api/window-open.md",
     "docs/api/structures/bluetooth-device.md",
+    "docs/api/structures/browser-window-options.md",
     "docs/api/structures/certificate-principal.md",
     "docs/api/structures/certificate.md",
     "docs/api/structures/cookie.md",
@@ -124,6 +125,7 @@ auto_filenames = {
     "docs/api/structures/string-protocol-response.md",
     "docs/api/structures/task.md",
     "docs/api/structures/thumbar-button.md",
+    "docs/api/structures/top-level-window-options.md",
     "docs/api/structures/trace-categories-and-options.md",
     "docs/api/structures/trace-config.md",
     "docs/api/structures/transaction.md",
@@ -131,6 +133,7 @@ auto_filenames = {
     "docs/api/structures/upload-data.md",
     "docs/api/structures/upload-file.md",
     "docs/api/structures/upload-raw-data.md",
+    "docs/api/structures/web-preferences.md",
     "docs/api/structures/web-source.md",
   ]
 

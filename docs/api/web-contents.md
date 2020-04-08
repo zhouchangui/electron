@@ -143,7 +143,8 @@ Returns:
 * `frameName` String
 * `disposition` String - Can be `default`, `foreground-tab`, `background-tab`,
   `new-window`, `save-to-disk` and `other`.
-* `options` BrowserWindowConstructorOptions - The options which will be used for creating the new
+* `options` [BrowserWindowOptions](structures/browser-window-options.md) - The
+  options which will be used for creating the new
   [`BrowserWindow`](browser-window.md).
 * `additionalFeatures` String[] - The non-standard features (features not handled
   by Chromium or Electron) given to `window.open()`.
@@ -683,9 +684,9 @@ Emitted when the devtools window instructs the webContents to reload
 Returns:
 
 * `event` Event
-* `webPreferences` WebPreferences - The web preferences that will be used by the guest
-  page. This object can be modified to adjust the preferences for the guest
-  page.
+* `webPreferences` [WebPreferences](structures/web-preferences.md) - The web
+  preferences that will be used by the guest page. This object can be modified
+  to adjust the preferences for the guest page.
 * `params` Record<string, string> - The other `<webview>` parameters such as the `src` URL.
   This object can be modified to adjust the parameters of the guest page.
 

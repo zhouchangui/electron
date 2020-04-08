@@ -44,7 +44,7 @@ ipcMain.handle('bootstrap', (event) => {
 async function createWindow () {
   await app.whenReady();
 
-  const options: Electron.BrowserWindowConstructorOptions = {
+  const options: Electron.BrowserWindowOptions = {
     width: 960,
     height: 620,
     autoHideMenuBar: true,
