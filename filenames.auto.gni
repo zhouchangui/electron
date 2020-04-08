@@ -6,6 +6,7 @@ auto_filenames = {
     "docs/api/auto-updater.md",
     "docs/api/browser-view.md",
     "docs/api/browser-window-proxy.md",
+    "docs/api/browser-window.md",
     "docs/api/client-request.md",
     "docs/api/clipboard.md",
     "docs/api/command-line-switches.md",
