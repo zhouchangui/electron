@@ -14,6 +14,11 @@ This document uses the following convention to categorize breaking changes:
 
 ## Planned Breaking API Changes (10.0)
 
+### API Changed: `BrowserWindowConstructorOptions` is renamed to `BrowserWindowOptions`
+
+For TypeScript users, the type name of `BrowserWindow`'s options has changed
+form `BrowserWindowConstructorOptions` to `BrowserWindowOptions`.
+
 ### Removed: Browser Window Affinity
 
 The `affinity` option when constructing a new `BrowserWindow` will be removed
