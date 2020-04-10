@@ -51,7 +51,7 @@ Process: [Main](../glossary.md#main-process)
 
 `TopLevelWindow` is an [EventEmitter][event-emitter].
 
-### `new TopLevelWindow([options])`
+### `new TopLevelWindow([options])` _Experimental_
 
 * `options` [TopLevelWindowOptions](structures/top-level-window-options.md) (optional)
 
