@@ -122,7 +122,9 @@ class `TopLevelWindow`.
 
 ### Instance Events
 
-Objects created with `new BrowserWindow` emit the following events:
+In addition to the [instance events of
+`TopLevelWindow`](top-level-window.md#instance-events), objects created with
+`new BrowserWindow` also emit the following events:
 
 #### Event: 'page-title-updated'
 
@@ -286,7 +288,9 @@ is emitted.
 
 ### Instance Properties
 
-Objects created with `new BrowserWindow` have the following properties:
+In addition to the [instance properties of
+`TopLevelWindow`](top-level-window.md#instance-properties), objects created with
+`new BrowserWindow` also have the following properties:
 
 ```javascript
 const { BrowserWindow } = require('electron')
@@ -305,7 +309,9 @@ events.
 
 ### Instance Methods
 
-Objects created with `new BrowserWindow` have the following instance methods:
+In addition to the [instance methods of
+`TopLevelWindow`](top-level-window.md#instance-methods), objects created with
+`new BrowserWindow` also have the following methods:
 
 **Note:** Some methods are only available on specific operating systems and are
 labeled as such.
